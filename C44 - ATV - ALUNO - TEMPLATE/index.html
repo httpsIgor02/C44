@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bike-Race</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <!-- O SDK principal do Firebase JS é sempre necessário e deve ser listado primeiro -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+    <!-- TODO: Adicionar SDKs para produtos Firebase que você deseja usar
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // A configuração do Firebase do seu aplicativo da web
+      const firebaseConfig = {
+  apiKey: "AIzaSyCg4yyyXumMn-r5hB_R_3_sJriQbJzTf0M",
+  authDomain: "corridinha-e.firebaseapp.com",
+  databaseURL: "https://corridinha-e-default-rtdb.firebaseio.com",
+  projectId: "corridinha-e",
+  storageBucket: "corridinha-e.appspot.com",
+  messagingSenderId: "431585258807",
+  appId: "1:431585258807:web:9a81ea0cc22b685bc5beb2",
+  measurementId: "G-LLPPKQLXS1"
+};
+      // Inicialize o Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/form.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/player.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
